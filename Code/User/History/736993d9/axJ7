@@ -1,0 +1,21 @@
+[general]
+bars = 16  # Dropping to 16 for better performance
+sensitivity = 40 
+# 30 FPS is the "sweet spot" to prevent Waybar lag
+framerate = 30
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+# Keep this high for the "curvy" look
+integral = 95
+monstercat = 1
+# This factor specifically rounds the peaks
+monstercat_factor = 2.0
+gravity = 40

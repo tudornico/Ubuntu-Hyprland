@@ -1,0 +1,68 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: #16213e;
+  color: #c0caf5;
+  border-bottom: 1px solid #0f3460;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #565f89;
+  border-radius: 6px;
+  margin: 4px 2px;
+  transition: all 0.15s;
+}
+
+#workspaces button.active {
+  background: #7aa2f7;
+  color: #1a1b2e;
+  font-weight: bold;
+}
+
+#workspaces button:hover {
+  background: #0f3460;
+  color: #c0caf5;
+}
+
+#clock, #pulseaudio, #memory, #cpu, #custom-music, #custom-cava, #custom-weather {
+  background: #0f3460;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin: 4px 3px;
+}
+
+#clock { color: #7dcfff; font-weight: bold; }
+#pulseaudio { color: #e0af68; }
+#memory { color: #9ece6a; }
+#cpu { color: #7aa2f7; }
+#custom-weather { color: #e0af68; }
+#window {
+  color: #9d7cd8;
+  font-style: italic;
+  padding: 0 8px;
+}
+
+#custom-music.playing {
+  color: #9ece6a;
+  text-shadow: 0 0 8px #7dcfff, 0 0 2px #bb9af7;
+  letter-spacing: 2px;
+}
+
+#custom-music.stopped {
+  color: #565f89;
+}
+
+#custom-cava {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 15px;
+  color: #7dcfff;
+  letter-spacing: -1.5px;
+  transition: none;
+  opacity: 0.9;
+}

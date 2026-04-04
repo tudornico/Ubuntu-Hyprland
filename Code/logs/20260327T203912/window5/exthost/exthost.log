@@ -1,0 +1,12 @@
+2026-03-27 22:26:29.325 [info] Extension host with pid 41005 started
+2026-03-27 22:26:29.325 [info] Skipping acquiring lock for /home/tudor/.config/Code/User/workspaceStorage/4e764c354add0950a82d9189a9dc3cc2.
+2026-03-27 22:26:29.376 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-03-27 22:26:29.387 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-03-27 22:26:29.426 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-03-27 22:26:29.441 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-03-27 22:26:29.461 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-03-27 22:26:29.522 [info] Eager extensions activated
+2026-03-27 22:26:29.524 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-03-27 22:26:29.525 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-03-27 23:42:20.093 [info] Extension host terminating: received terminate message from renderer
+2026-03-27 23:42:20.101 [info] Extension host with pid 41005 exiting with code 0

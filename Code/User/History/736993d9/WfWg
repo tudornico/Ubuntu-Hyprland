@@ -1,0 +1,15 @@
+[general]
+bars = 12
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+# IMPORTANT: This ensures each frame is on a new line for the script to read
+ascii_data_newline = 1
+
+[smoothing]
+integral = 80
+monstercat = 1

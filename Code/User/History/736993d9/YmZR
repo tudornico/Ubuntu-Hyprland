@@ -1,0 +1,19 @@
+[general]
+bars = 12
+# Increase sensitivity if the bars are too shy (try 100 or 150)
+sensitivity = 100
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+# Back to 8 for more height
+ascii_max_range = 8
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+integral = 95
+monstercat = 1
+# Keep gravity low for that "mellow" floaty feel
+gravity = 50

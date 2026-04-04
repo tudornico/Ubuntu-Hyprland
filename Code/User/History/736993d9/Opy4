@@ -1,0 +1,16 @@
+[general]
+bars = 14
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+# Increased range for smoother steps
+ascii_max_range = 14
+ascii_data_separator = 0
+
+[smoothing]
+# This makes the bars "glide" rather than "jump"
+integral = 85
+monstercat = 1
+gravity = 100

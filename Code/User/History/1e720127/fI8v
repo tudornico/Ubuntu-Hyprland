@@ -1,0 +1,13 @@
+[general]
+bars = 10
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+
+[smoothing]
+integral = 77
+monstercat = 1
+waves = 0

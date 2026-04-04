@@ -1,0 +1,25 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window", "custom/music"],
+  "modules-right": ["memory", "cpu", "pulseaudio", "battery", "clock"],
+
+  "hyprland/workspaces": { "format": "{id}" },
+  "hyprland/window": { "max-length": 50 },
+  "clock": { "format": "{:%H:%M}", "tooltip-format": "{:%A, %d %B %Y}" },
+  "pulseaudio": { "format": "♥ {volume}%" },
+  "memory": { "format": "⬆ {used:0.1f}G" },
+  "cpu": { "format": " {usage}%", "interval": 2 },
+  "battery": {
+    "format": "⚡ {capacity}%",
+    "states": { "warning": 30, "critical": 15 }
+  },
+ "custom/music": {
+    "exec": "echo '{\"text\": \"test\", \"class\": \"playing\"}'",
+    "return-type": "json",
+    "interval": 2
+}
+}

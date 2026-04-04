@@ -1,0 +1,17 @@
+[general]
+framerate = 60
+autosens = 1
+bars = 20
+
+[output]
+method = ncurses
+ascii_max_range = 7
+bar_delimiter = 0
+
+[color]
+gradient = 1
+gradient_count = 4
+gradient_color_1 = '#1a1b2e'
+gradient_color_2 = '#7aa2f7'
+gradient_color_3 = '#bb9af7'
+gradient_color_4 = '#7dcfff'

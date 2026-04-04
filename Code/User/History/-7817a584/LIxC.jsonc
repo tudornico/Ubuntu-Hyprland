@@ -1,0 +1,78 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window", "custom/music", "custom/cava"],
+  "modules-right": [
+    "group/memory-info",
+    "group/cpu-info",
+    "pulseaudio",
+    "clock"
+  ],
+  "hyprland/workspaces": { "format": "{id}" },
+  "hyprland/window": { "max-length": 50 },
+  "clock": { "format": "{:%H:%M}", "tooltip-format": "{:%A, %d %B %Y}" },
+  "pulseaudio": { "format": "♥ {volume}%" },
+
+  // --- Memory Group with Slide-out ---
+  "group/memory-info": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "memory-extra",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "memory", // Main visible part
+      "custom/ram-detail" // Hidden part that slides out
+    ]
+  },
+
+  // --- CPU Group with Slide-out ---
+  "group/cpu-info": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "cpu-extra",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "cpu",
+      "custom/gpu-usage" // Requires a small script or command
+    ]
+  },
+
+  "memory": { "format": "⬆ {used:0.1f}G" },
+  "custom/ram-detail": {
+      "exec": "free -m | grep Mem | awk '{print $4\"MB free\"}'",
+      "interval": 5,
+      "format": " (Free: {})"
+  },
+
+  "cpu": { "format": " {usage}%" },
+  "custom/gpu-usage": {
+      "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print \"GPU: \"$1\"%\"}'",
+      "interval": 2,
+      "format": " {}"
+  },
+  
+"custom/music": {
+    "format": "♪ {}",
+    "return-type": "json",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} — {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' --follow",
+    "on-click": "playerctl play-pause",
+    "max-length": 40
+},
+
+  "custom/cava": {
+    "exec": "/home/tudor//.config/waybar/waybar-cava.sh",
+    "format": "{}",
+    "tooltip": false,
+    "restart-interval": 1,
+    "hide-empty-text": true,
+    "on-click": "playerctl -p spotify play-pause"
+  }
+
+}

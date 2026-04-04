@@ -1,0 +1,27 @@
+[general]
+bars = 16
+# Enable Automatic Sensitivity
+autosens = 1
+# This keeps the bars from ever "clipping" the top
+overshoot = 0
+# Adjust these to set the "mellow" floor and ceiling
+sensitivity = 100
+# Higher framerate (35-40) for fluid curves
+framerate = 40
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+# High integral (95) + Monstercat (1.5) = Constant smooth curves
+integral = 95
+monstercat = 1
+monstercat_factor = 1.5
+gravity = 40
+# This prevents bars from disappearing too fast
+noise_reduction = 0.15

@@ -1,0 +1,22 @@
+[general]
+# More bars = higher resolution movement
+bars = 20
+# Boost sensitivity if they feel too "heavy"
+sensitivity = 100
+# Force a high refresh rate for "Liquid" movement
+framerate = 60
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 8
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+# Higher integral (98) makes the bars "glue" together like liquid
+integral = 98
+monstercat = 1
+# Lower gravity (30) makes them float down like silk
+gravity = 30

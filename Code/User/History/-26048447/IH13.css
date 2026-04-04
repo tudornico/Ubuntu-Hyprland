@@ -1,0 +1,160 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: #16213e;
+  color: #c0caf5;
+  border-bottom: 1px solid #0f3460;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #565f89;
+  border-radius: 6px;
+  margin: 4px 2px;
+  transition: all 0.15s;
+}
+
+#workspaces button.active {
+  background: #7aa2f7;
+  color: #1a1b2e;
+  font-weight: bold;
+}
+
+#workspaces button:hover {
+  background: #0f3460;
+  color: #c0caf5;
+}
+
+#clock, #pulseaudio, #memory, #cpu, #custom-music, #custom-cava, #custom-weather {
+  background: #0f3460;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin: 4px 3px;
+}
+
+#clock { color: #7dcfff; font-weight: bold; }
+#pulseaudio { color: #e0af68; }
+#memory { color: #9ece6a; }
+#cpu { color: #7aa2f7; }
+#custom-weather { color: #e0af68; }
+
+#window {
+  color: #9d7cd8;
+  font-style: italic;
+  padding: 0 8px;
+}
+
+#custom-music {
+    background: #0f3460;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin: 4px 3px;
+    color: #9ece6a;
+    transition: all 0.3s ease;
+}
+
+#custom-music.Playing {
+    color: #b9f27c;
+    text-shadow: 0 0 5px rgba(185, 242, 124, 0.6), 
+                 0 0 10px rgba(185, 242, 124, 0.4);
+    font-weight: bold;
+}
+
+#custom-music.Paused {
+    color: #565f89;
+    text-shadow: none;
+}
+
+#custom-cava {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 15px;
+  color: #7dcfff;
+  letter-spacing: -1.5px;
+  transition: none;
+  opacity: 0.9;
+}
+
+/* =============================================
+   NEON TOKYO HOVER GLOWS — right-side widgets
+   ============================================= */
+
+#clock, #pulseaudio, #memory, #cpu {
+  transition: all 0.2s ease;
+}
+
+#clock:hover {
+  background: rgba(125, 207, 255, 0.12);
+  color: #a9e3ff;
+  box-shadow:
+    0 0 8px rgba(125, 207, 255, 0.4),
+    0 0 20px rgba(125, 207, 255, 0.15),
+    inset 0 0 8px rgba(125, 207, 255, 0.06);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: translateY(-1px);
+}
+
+#memory:hover {
+  background: rgba(158, 206, 106, 0.12);
+  color: #b9f27c;
+  box-shadow:
+    0 0 8px rgba(158, 206, 106, 0.4),
+    0 0 20px rgba(158, 206, 106, 0.15),
+    inset 0 0 8px rgba(158, 206, 106, 0.06);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: translateY(-1px);
+}
+
+#cpu:hover {
+  background: rgba(122, 162, 247, 0.12);
+  color: #a0baff;
+  box-shadow:
+    0 0 8px rgba(122, 162, 247, 0.4),
+    0 0 20px rgba(122, 162, 247, 0.15),
+    inset 0 0 8px rgba(122, 162, 247, 0.06);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: translateY(-1px);
+}
+
+#clock tooltip {
+  background: rgba(10, 14, 30, 0.92);
+  border: 1px solid rgba(125, 207, 255, 0.35);
+  border-radius: 8px;
+}
+
+#clock tooltip label {
+  color: #7dcfff;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  padding: 8px 14px;
+}
+
+#memory tooltip {
+  background: rgba(10, 14, 30, 0.92);
+  border: 1px solid rgba(158, 206, 106, 0.35);
+  border-radius: 8px;
+}
+
+#memory tooltip label {
+  color: #9ece6a;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  padding: 8px 14px;
+}
+
+#cpu tooltip {
+  background: rgba(10, 14, 30, 0.92);
+  border: 1px solid rgba(122, 162, 247, 0.35);
+  border-radius: 8px;
+}
+
+#cpu tooltip label {
+  color: #7aa2f7;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  padding: 8px 14px;
+}

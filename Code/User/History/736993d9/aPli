@@ -1,0 +1,28 @@
+[general]
+bars = 16
+autosens = 1
+# This helps the high-pitch parts stay "caught" in the visualizer
+overshoot = 0
+# Higher framerate (45) helps high-frequency notes look smoother
+framerate = 45
+
+[input]
+# Increasing the sample rate helps detect high-pitched notes better
+sample_rate = 44100
+source = auto
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+integral = 95
+monstercat = 1
+monstercat_factor = 1.8
+gravity = 35
+# This is key for high-pitch: it keeps a tiny "ghost" of the last frame
+noise_reduction = 0.1

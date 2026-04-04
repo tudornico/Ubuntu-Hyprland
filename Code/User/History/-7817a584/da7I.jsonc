@@ -1,0 +1,31 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window", "custom/music", "custom/cava"],
+  "modules-right": ["memory", "cpu", "pulseaudio", "clock"],
+  "hyprland/workspaces": { "format": "{id}" },
+  "hyprland/window": { "max-length": 50 },
+  "clock": { "format": "{:%H:%M}", "tooltip-format": "{:%A, %d %B %Y}" },
+  "pulseaudio": { "format": "♥ {volume}%" },
+  "memory": { "format": "⬆ {used:0.1f}G" },
+  "cpu": { "format": " {usage}%", "interval": 2 },
+  
+  "custom/music": {
+    "exec": "playerctl --player=$(playerctl -l | head -1) metadata --format '♪ {{artist}} — {{title}}' 2>/dev/null",
+    "interval": 3,
+    "max-length": 40
+  },
+
+  "custom/cava": {
+    "exec": "/home/tudor//.config/waybar/waybar-cava.sh",
+    "format": "{}",
+    "tooltip": false,
+    "restart-interval": 1,
+    "hide-empty-text": true,
+    "on-click": "playerctl -p spotify play-pause"
+  }
+
+}

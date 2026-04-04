@@ -1,0 +1,10 @@
+# GIMP action-history
+
+(history-item "image-new" 1)
+(history-item "file-quit" 3)
+(history-item "edit-copy" 1)
+(history-item "view-zoom-revert" 0)
+(history-item "file-open" 0)
+(history-item "view-close" 1)
+
+# end of action-history

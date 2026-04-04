@@ -1,0 +1,25 @@
+[general]
+bars = 18
+# TURN OFF Normalization
+autosens = 0
+# Start at 60. If bars are too low, increase to 80. If too high, lower to 40.
+sensitivity = 60
+framerate = 40
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+# High integral (95) keeps it "curvy" and fluid
+integral = 95
+monstercat = 1
+monstercat_factor = 2.0
+# Lower gravity (35) prevents the "crashing" feel
+gravity = 35
+# Small floor to prevent high-pitch "flicker"
+noise_reduction = 0.05

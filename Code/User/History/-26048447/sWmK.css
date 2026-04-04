@@ -1,0 +1,132 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: #16213e;
+  color: #c0caf5;
+  border-bottom: 1px solid #7aa2f7; /* Neon accent border */
+}
+
+/* --- The Dropdown Menu Window --- */
+menu {
+  background: #1a1b2e; /* Deeper Tokyo Night background */
+  border: 1px solid #7aa2f7;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px; /* Spacing from the bar */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(122, 162, 247, 0.2);
+}
+
+menu item {
+  color: #c0caf5;
+  padding: 5px 15px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+menu item:hover {
+  background: #7aa2f7;
+  color: #16213e;
+}
+
+/* --- Modules --- */
+#workspaces button {
+  padding: 0 8px;
+  color: #565f89;
+  border-radius: 6px;
+  margin: 4px 2px;
+  transition: all 0.2s;
+}
+
+#workspaces button.active {
+  background: #7aa2f7;
+  color: #1a1b2e;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(122, 162, 247, 0.4);
+}
+
+#workspaces button:hover {
+  background: #0f3460;
+  color: #7dcfff;
+}
+
+#clock, #pulseaudio, #memory, #cpu, #custom-music, #custom-cava {
+  background: #0f3460;
+  padding: 3px 12px;
+  border-radius: 6px;
+  margin: 4px 3px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Specific Neon Accents */
+#clock { color: #7dcfff; }
+#pulseaudio { color: #e0af68; }
+#memory { color: #9ece6a; }
+#cpu { color: #f7768e; } /* Changed to a soft neon red/pink for variety */
+
+#clock:hover, #pulseaudio:hover, #memory:hover, #cpu:hover {
+  background: #1f355e;
+  text-shadow: 0 0 5px currentColor;
+}
+
+#custom-music {
+  color: #9ece6a;
+}
+
+#custom-music.Playing {
+  color: #b9f27c;
+  text-shadow: 0 0 8px rgba(185, 242, 124, 0.6);
+}
+
+/* All main modules: Uniform Size & Tokyo Night Style */
+#clock, #pulseaudio, #memory, #cpu {
+  background: #0f3460;
+  min-width: 90px;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 6px;
+  margin: 6px 3px;
+  color: #c0caf5;
+  transition: all 0.3s ease;
+}
+
+/* Neon Glows */
+#clock { color: #7dcfff; }
+#pulseaudio { color: #e0af68; }
+#memory { color: #9ece6a; }
+#cpu { color: #7aa2f7; }
+
+/* The 'Dropdown' Child (The vertical slide-out) */
+.dropdown-child {
+  background: #16213e;
+  color: #bb9af7;
+  font-size: 11px;
+  font-weight: bold;
+  
+  /* Standard GTK Alignment */
+  min-width: 90px;
+  min-height: 22px;
+  padding: 2px 5px;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #7aa2f7;
+  border-top: none;
+  
+  /* This moves it UP slightly to touch the bar module */
+  margin-top: -6px; 
+  margin-bottom: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Hover highlights */
+#memory-info:hover #memory, 
+#cpu-info:hover #cpu {
+  background: #1a4b8a;
+  color: #ffffff;
+}

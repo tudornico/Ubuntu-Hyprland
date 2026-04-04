@@ -1,0 +1,148 @@
+* {
+  bg:          #16213e;
+  bg-alt:      #0f3460;
+  bg-hover:    #1a2a52;
+  border-col:  #7aa2f7;
+  fg:          #c0caf5;
+  fg-dim:      #565f89;
+  blue:        #7aa2f7;
+  cyan:        #7dcfff;
+  green:       #9ece6a;
+  purple:      #9d7cd8;
+  amber:       #e0af68;
+
+  font:        "JetBrains Mono 12";
+  background-color: transparent;
+  text-color:  @fg;
+}
+
+window {
+  background-color: @bg;
+  border:           1px solid;
+  border-color:     @border-col;
+  border-radius:    12px;
+  width:            480px;
+  padding:          12px;
+  /* box-shadow:       0 0 0 1px #1a1b2e, 0 8px 32px rgba(0,0,0,0.6); */
+}
+
+mainbox {
+  background-color: transparent;
+  spacing:          8px;
+  padding:          4px;
+}
+
+/* ---- search bar ---- */
+inputbar {
+  background-color: @bg-alt;
+  border-radius:    8px;
+  border:           1px solid;
+  border-color:     rgba(122, 162, 247, 0.3);
+  padding:          10px 14px;
+  spacing:          10px;
+  children:         [ prompt, entry ];
+}
+
+prompt {
+  background-color: transparent;
+  text-color:       @cyan;
+  font:             "JetBrains Mono Bold 12";
+}
+
+entry {
+  background-color: transparent;
+  text-color:       @fg;
+  placeholder:      "search...";
+  placeholder-color: @fg-dim;
+  cursor:           text;
+}
+
+/* ---- mode switcher ---- */
+mode-switcher {
+  background-color: transparent;
+  spacing:          6px;
+}
+
+button {
+  background-color: @bg-alt;
+  text-color:       @fg-dim;
+  border-radius:    6px;
+  padding:          4px 12px;
+  border:           1px solid;
+  border-color:     transparent;
+}
+
+button selected {
+  background-color: @blue;
+  text-color:       #1a1b2e;
+  border-color:     @blue;
+  font:             "JetBrains Mono Bold 12";
+}
+
+/* ---- results list ---- */
+listview {
+  background-color: transparent;
+  spacing:          2px;
+  padding:          6px 0 0 0;
+  lines:            8;
+  scrollbar:        false;
+}
+
+element {
+  background-color: transparent;
+  border-radius:    8px;
+  padding:          8px 10px;
+  spacing:          10px;
+  orientation:      horizontal;
+}
+
+element normal.normal {
+  background-color: transparent;
+  text-color:       @fg;
+}
+
+element normal.urgent {
+  background-color: transparent;
+  text-color:       @amber;
+}
+
+element selected.normal {
+  background-color: @bg-alt;
+  text-color:       @cyan;
+  border:           1px solid;
+  border-color:     rgba(125, 207, 255, 0.3);
+}
+
+element selected.urgent {
+  background-color: @bg-alt;
+  text-color:       @amber;
+}
+
+element alternate.normal {
+  background-color: transparent;
+  text-color:       @fg;
+}
+
+element-icon {
+  size:             24px;
+  background-color: transparent;
+}
+
+element-text {
+  background-color: transparent;
+  text-color:       inherit;
+  vertical-align:   0.5;
+}
+
+/* ---- no results ---- */
+message {
+  background-color: @bg-alt;
+  border-radius:    8px;
+  padding:          8px 12px;
+  margin:           4px 0;
+}
+
+textbox {
+  background-color: transparent;
+  text-color:       @fg-dim;
+}

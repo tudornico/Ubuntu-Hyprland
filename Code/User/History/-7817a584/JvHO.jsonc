@@ -1,0 +1,43 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window", "custom/music", "custom/cava"],
+  "modules-right": ["memory", "cpu", "pulseaudio", "clock"],
+  "hyprlaond/workspaces": { "format": "{id}" },
+  "hyprland/window": { "max-length": 50 },
+  "clock": {
+  "format": "{:%H:%M}",
+  "tooltip-format": " {:%A, %d %B %Y}\n🕐  {:%H:%M:%S}"
+},
+"memory": {
+  "format": "⬆ {used:0.1f}G",
+  "tooltip-format": "used   {used:0.1f} GiB\nfree   {avail:0.1f} GiB\ntotal  {total:0.1f} GiB"
+},
+"cpu": {
+  "format": " {usage}%",
+  "interval": 2,
+  "tooltip-format": "cpu  {usage}%"
+},
+"pulseaudio": { "format": "♥ {volume}%" },
+  
+"custom/music": {
+    "format": "♪ {}",
+    "return-type": "json",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} — {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' --follow",
+    "on-click": "playerctl play-pause",
+    "max-length": 40
+},
+
+  "custom/cava": {
+    "exec": "/home/tudor//.config/waybar/waybar-cava.sh",
+    "format": "{}",
+    "tooltip": false,
+    "restart-interval": 1,
+    "hide-empty-text": true,
+    "on-click": "playerctl -p spotify play-pause"
+  }
+
+}

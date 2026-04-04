@@ -1,0 +1,160 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "1ed4aee680f81f7d4f127d2078e03ec02c39f322ba1d5bdf47d7eb00cc67c112",
+    "telemetry.devDeviceId": "6350afef-b64b-487c-a937-0e7240add5d2",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///etc/xdg/swaync"
+            },
+            {
+                "folderUri": "file:///home/tudor/.config/cava"
+            },
+            {
+                "folderUri": "file:///home/tudor/.config/rofi"
+            },
+            {
+                "folderUri": "file:///home/tudor/.config/fastfetch"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/tudor/projects": "__default__profile__",
+            "file:///home/tudor/projects/MyLLM": "__default__profile__",
+            "file:///home/tudor/Templates": "__default__profile__",
+            "file:///etc/xdg/waybar": "__default__profile__",
+            "file:///etc/xdg/swaync": "__default__profile__",
+            "file:///home/tudor/.config/hypr": "__default__profile__",
+            "file:///home/tudor/.config/waybar": "__default__profile__",
+            "file:///home/tudor/.config/cava": "__default__profile__",
+            "file:///home/tudor/.config": "__default__profile__",
+            "file:///home/tudor": "__default__profile__",
+            "file:///home/tudor/.config/fastfetch": "__default__profile__",
+            "file:///home/tudor/.config/kitty": "__default__profile__",
+            "file:///home/tudor/Pictures": "__default__profile__",
+            "file:///home/tudor/.config/google-chrome": "__default__profile__",
+            "file:///home/tudor/.config/rofi": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#121314",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#bfbfbf",
+            "background": "#121314",
+            "editorBackground": "#121314",
+            "titleBarBackground": "#191a1b",
+            "titleBarBorder": "#2a2b2c",
+            "activityBarBackground": "#191a1b",
+            "activityBarBorder": "#2a2b2c",
+            "sideBarBackground": "#191a1b",
+            "sideBarBorder": "#2a2b2c",
+            "statusBarBackground": "#191a1b",
+            "statusBarBorder": "#2a2b2c",
+            "statusBarNoFolderBackground": "#191a1b"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 235,
+            "auxiliaryBarWidth": 235,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 235,
+            "auxiliaryBarWidth": 235,
+            "workspaces": {
+                "a521a85ebca0c74aa9c8eccf31b4d949": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "6e99715d127503c77ee11939bdc59c35": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "b13cbc9897cf73da2b9bf2eebfeb6b3a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "1eccb1cc76b50dba442a8302d938868d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "63577184d83f2495b7fd5d3c1212a307": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "c74477c9e1aa9436f474313f20792287": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "4f040ea91f35b7ab3444dd06fe25d3c1": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "09ad0e9fb6698f3d394d9171948b1089": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "8ba928ff3840332d5854baed28392906": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "98c07d05bc1b482d5487b20714233a87": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "90db3a2d4fe93df7422ed5b53e23295a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "a72e9afb0f43d24b30c82474d1f2ee20": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "1d34f44824e1ba9eda9001bb1be3190a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "3a2ec9976ac019eaca5331b8570df55b": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "4e764c354add0950a82d9189a9dc3cc2": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "e6e259e583d103d0b4c032208c4d115e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/tudor/.config/fastfetch",
+            "backupPath": "/home/tudor/.config/Code/Backups/1059d115f5ea58bf9ae7fca3d61c0fd1",
+            "uiState": {
+                "mode": 1,
+                "x": 2885,
+                "y": 54,
+                "width": 941,
+                "height": 1012
+            }
+        },
+        "openedWindows": []
+    }
+}

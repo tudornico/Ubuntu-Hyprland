@@ -1,0 +1,1 @@
+2026-04-04 12:10:42.893 [error] [File Watcher (node.js)] Failed to watch /home/tudor/.config/fastfetch/hypr.png for changes using fs.watch() (Error: ENOENT: no such file or directory, watch '/home/tudor/.config/fastfetch/hypr.png')

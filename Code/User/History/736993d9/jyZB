@@ -1,0 +1,17 @@
+[general]
+# Increase this for more "slim" bars (e.g., 20 or 24)
+bars = 24
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+
+[smoothing]
+# Higher values make it smoother/more "liquid"
+integral = 90 
+monstercat = 1
+# This helps the "neon" tips stay visible longer
+gravity = 100

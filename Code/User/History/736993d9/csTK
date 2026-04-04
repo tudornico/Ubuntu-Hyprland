@@ -1,0 +1,19 @@
+[general]
+bars = 12
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+# Lowering this to 6 makes the bars less likely to "clog" the top
+ascii_max_range = 6
+ascii_data_separator = 0
+# This is the secret: ensuring a clean break between frames
+ascii_data_newline = 1
+
+[smoothing]
+# Higher integral makes it "Liquid" (mellow)
+integral = 95
+monstercat = 1
+# Lower gravity makes the bars fall slowly and smoothly
+gravity = 40

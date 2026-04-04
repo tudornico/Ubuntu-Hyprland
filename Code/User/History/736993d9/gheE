@@ -1,0 +1,14 @@
+[general]
+bars = 12
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+# This MUST be 0
+ascii_data_separator = 0
+
+[smoothing]
+integral = 80
+monstercat = 1

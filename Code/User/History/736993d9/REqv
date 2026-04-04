@@ -1,0 +1,19 @@
+[general]
+# 18 bars is the "sweet spot" for performance and looks
+bars = 18
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+# Slow down the refresh rate slightly to save CPU/Lag
+request_period = 30
+
+[smoothing]
+# Higher integral = more "water-like" movement
+integral = 95
+monstercat = 1
+# Lower gravity = slower falling bars
+gravity = 60

@@ -1,0 +1,20 @@
+[general]
+# Drop to 12 or 14 bars. Fewer bars = less work for Waybar's layout engine.
+bars = 12
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7
+ascii_data_separator = 0
+
+# THIS IS THE LAG KILLER:
+# 50ms = 20 updates per second. This is much more "digestible" for Waybar.
+request_period = 50
+
+[smoothing]
+# Very high smoothing to hide the lower refresh rate
+integral = 98
+monstercat = 1
+gravity = 50

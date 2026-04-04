@@ -1,0 +1,124 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: #16213e;
+  color: #c0caf5;
+  border-bottom: 1px solid #0f3460;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #565f89;
+  border-radius: 6px;
+  margin: 4px 2px;
+  transition: all 0.15s;
+}
+
+#workspaces button.active {
+  background: #7aa2f7;
+  color: #1a1b2e;
+  font-weight: bold;
+}
+
+#workspaces button:hover {
+  background: #0f3460;
+  color: #c0caf5;
+}
+
+#clock, #pulseaudio, #memory, #cpu, #custom-music, #custom-cava, #custom-weather {
+  background: #0f3460;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin: 4px 3px;
+}
+
+#clock { color: #7dcfff; font-weight: bold; }
+#pulseaudio { color: #e0af68; }
+#memory { color: #9ece6a; }
+#cpu { color: #7aa2f7; }
+#custom-weather { color: #e0af68; }
+
+#window {
+  color: #9d7cd8;
+  font-style: italic;
+  padding: 0 8px;
+}
+
+#custom-music {
+  background: #0f3460;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin: 4px 3px;
+  color: #9ece6a;
+  transition: all 0.3s ease;
+}
+
+#custom-music.Playing {
+  color: #b9f27c;
+  text-shadow: 0 0 5px rgba(185, 242, 124, 0.6),
+               0 0 10px rgba(185, 242, 124, 0.4);
+  font-weight: bold;
+}
+
+#custom-music.Paused {
+  color: #565f89;
+  text-shadow: none;
+}
+
+#custom-cava {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 15px;
+  color: #7dcfff;
+  letter-spacing: -1.5px;
+  transition: none;
+  opacity: 0.9;
+}
+
+/* =============================================
+   TOOLTIPS — neon tokyo style per widget
+   ============================================= */
+
+tooltip {
+  background: rgba(10, 14, 30, 0.96);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+tooltip label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  padding: 6px 12px;
+  color: #c0caf5;
+}
+
+#clock tooltip {
+  border: 1px solid rgba(125, 207, 255, 0.4);
+  box-shadow: 0 0 10px rgba(125, 207, 255, 0.15), inset 0 0 6px rgba(125, 207, 255, 0.04);
+}
+
+#clock tooltip label {
+  color: #7dcfff;
+}
+
+#memory tooltip {
+  border: 1px solid rgba(158, 206, 106, 0.4);
+  box-shadow: 0 0 10px rgba(158, 206, 106, 0.15), inset 0 0 6px rgba(158, 206, 106, 0.04);
+}
+
+#memory tooltip label {
+  color: #9ece6a;
+}
+
+#cpu tooltip {
+  border: 1px solid rgba(122, 162, 247, 0.4);
+  box-shadow: 0 0 10px rgba(122, 162, 247, 0.15), inset 0 0 6px rgba(122, 162, 247, 0.04);
+}
+
+#cpu tooltip label {
+  color: #7aa2f7;
+}

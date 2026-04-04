@@ -1,0 +1,70 @@
+2026-04-04 11:53:57.744 [info] [main] Log level: Info
+2026-04-04 11:53:57.744 [info] [main] Validating found git in: "git"
+2026-04-04 11:53:57.744 [info] [main] Using git "2.43.0" from "git"
+2026-04-04 11:53:57.744 [info] [Model][doInitialScan] Initial repository scan started
+2026-04-04 11:53:57.744 [info] > git rev-parse --show-toplevel [4ms]
+2026-04-04 11:53:57.744 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:53:57.744 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-04-04 11:53:57.778 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 11:53:57.778 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:53:57.785 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 11:53:57.785 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:53:57.821 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 11:53:57.821 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:54:00.179 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 11:54:00.179 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:54:17.375 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-04 11:54:17.375 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:56:04.035 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 11:56:04.035 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 11:56:19.329 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 11:56:19.329 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 12:05:42.727 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 12:05:42.727 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-04-04 12:10:49.227 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-04 12:10:49.233 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [4ms]
+2026-04-04 12:10:49.242 [info] [Model][openRepository] Opened repository (path): /home/tudor/.config/fastfetch
+2026-04-04 12:10:49.242 [info] [Model][openRepository] Opened repository (real path): /home/tudor/.config/fastfetch
+2026-04-04 12:10:49.242 [info] [Model][openRepository] Opened repository (kind): repository
+2026-04-04 12:10:49.250 [info] > git config --get commit.template [4ms]
+2026-04-04 12:10:49.251 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2026-04-04 12:10:49.254 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/tudor/.config/fastfetch/.git/refs/remotes/origin/main'
+2026-04-04 12:10:49.254 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2026-04-04 12:10:49.261 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2026-04-04 12:10:49.273 [info] > git status -z -uall [16ms]
+2026-04-04 12:10:49.289 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2026-04-04 12:10:49.293 [info] > git config --get commit.template [4ms]
+2026-04-04 12:10:49.293 [info] > git config --get --local branch.main.vscode-merge-base [2ms]
+2026-04-04 12:10:49.293 [warning] [Git][config] git config failed: Failed to execute git
+2026-04-04 12:10:49.298 [info] > git reflog main --grep-reflog=branch: Created from *. [3ms]
+2026-04-04 12:10:49.299 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2026-04-04 12:10:49.301 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/tudor/.config/fastfetch/.git/refs/remotes/origin/main'
+2026-04-04 12:10:49.301 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [2ms]
+2026-04-04 12:10:49.302 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2026-04-04 12:10:49.305 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [3ms]
+2026-04-04 12:10:49.307 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2026-04-04 12:10:49.307 [info] > git config --add --local branch.main.vscode-merge-base origin/main [0ms]
+2026-04-04 12:10:49.310 [info] > git status -z -uall [6ms] (cancelled)
+2026-04-04 12:10:49.310 [info] > git config --get commit.template [0ms]
+2026-04-04 12:10:49.312 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [0ms]
+2026-04-04 12:10:49.313 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/tudor/.config/fastfetch/.git/refs/remotes/origin/main'
+2026-04-04 12:10:49.314 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2026-04-04 12:10:49.317 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2026-04-04 12:10:49.324 [info] > git status -z -uall [9ms]
+2026-04-04 12:10:49.328 [info] > git merge-base refs/heads/main refs/remotes/origin/main [2ms]
+2026-04-04 12:10:49.329 [info] > git merge-base refs/heads/main refs/remotes/origin/main [1ms]
+2026-04-04 12:10:49.331 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% bbf7bc6f39fdcf9d9b1087c06e197d05d23b518d...refs/remotes/origin/main -- [2ms]
+2026-04-04 12:10:49.331 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% bbf7bc6f39fdcf9d9b1087c06e197d05d23b518d...refs/remotes/origin/main -- [1ms]
+2026-04-04 12:10:49.772 [info] > git check-ignore -v -z --stdin [2ms]
+2026-04-04 12:11:38.712 [info] > git config --get commit.template [2ms]
+2026-04-04 12:11:38.713 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2026-04-04 12:11:38.714 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/tudor/.config/fastfetch/.git/refs/remotes/origin/main'
+2026-04-04 12:11:38.715 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2026-04-04 12:11:38.720 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2026-04-04 12:11:38.732 [info] > git status -z -uall [15ms]
+2026-04-04 12:12:01.280 [info] > git config --get commit.template [4ms]
+2026-04-04 12:12:01.281 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2026-04-04 12:12:01.282 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/tudor/.config/fastfetch/.git/refs/remotes/origin/main'
+2026-04-04 12:12:01.284 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2026-04-04 12:12:01.290 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2026-04-04 12:12:01.302 [info] > git status -z -uall [16ms]

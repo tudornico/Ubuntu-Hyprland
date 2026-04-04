@@ -1,0 +1,22 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window", "custom/music"],
+  "modules-right": ["memory", "cpu", "wireplumber", "clock"],
+  "hyprland/workspaces": { "format": "{id}" },
+  "hyprland/window": { "max-length": 50 },
+  "clock": { "format": "{:%H:%M}", "tooltip-format": "{:%A, %d %B %Y}" },
+  "wireplumber": { "format": "♥ {volume}%" },
+  "memory": { "format": "⬆ {used:0.1f}G" },
+  "cpu": { "format": " {usage}%", "interval": 2 },
+
+  "custom/music": {
+    "exec": "stdbuf -oL /home/tudor/.config/waybar/mediaplayer.sh",
+    "return-type": "json",
+    "interval": "once",
+    "max-length": 60
+}
+}

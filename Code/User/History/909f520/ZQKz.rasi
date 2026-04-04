@@ -1,0 +1,9 @@
+configuration {
+  modi: "drun,ssh,run";
+  show-icons: true;
+  drun-display-format: "{name}";
+  disable-history: false;
+  fuzzy: true;
+}
+
+@theme "~/.config/rofi/tokyo-night.rasi"

@@ -1,0 +1,22 @@
+[general]
+bars = 20
+# LOWER this until the bars stop hitting the top (try 40 or 50)
+sensitivity = 50
+framerate = 60
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 8
+ascii_data_separator = 0
+ascii_data_newline = 1
+
+[smoothing]
+# 99 is the max: this makes the bars move like a slow, connected wave
+integral = 99
+# Monstercat smoothing creates the "curvy" peak look
+monstercat = 1
+monstercat_factor = 1.5
+# Gravity 20 means they float down very slowly
+gravity = 20

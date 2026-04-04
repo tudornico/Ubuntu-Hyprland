@@ -1,0 +1,100 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: #16213e;
+  color: #c0caf5;
+  border-bottom: 1px solid #0f3460;
+}
+
+/* Workspaces */
+#workspaces button {
+  padding: 0 8px;
+  color: #565f89;
+  border-radius: 6px;
+  margin: 4px 2px;
+  transition: all 0.15s;
+}
+#workspaces button.active {
+  background: #7aa2f7;
+  color: #1a1b2e;
+  font-weight: bold;
+}
+#workspaces button:hover {
+  background: #0f3460;
+  color: #c0caf5;
+}
+
+/* Shared pill style */
+#clock, #pulseaudio, #memory, #cpu, #battery, #network, #custom-music {
+  background: #0f3460;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin: 4px 3px;
+}
+
+#clock { color: #7dcfff; font-weight: bold; }
+#pulseaudio { color: #e0af68; }
+#memory { color: #9ece6a; }
+#cpu { color: #7aa2f7; }
+#battery { color: #9ece6a; }
+#battery.warning { color: #e0af68; }
+#battery.critical { color: #f7768e; }
+#network { color: #bb9af7; }
+#custom-music { color: #9ece6a; }
+
+#window {
+  color: #9d7cd8;
+  font-style: italic;
+  padding: 0 8px;
+}
+
+
+#custom-music {
+    color: #9ece6a;
+    padding: 3px 12px;
+}
+
+#custom-music.playing {
+    color: #7dcfff;
+    background: #0f3460;
+    text-shadow: 0 0 8px #7dcfff, 0 0 2px #bb9af7;
+}
+
+#custom-music.stopped {
+    color: #565f89;
+    background: #0f3460;
+}
+
+
+#custom-weather {
+    color: #7dcfff;
+    background: #0f3460;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin: 4px 3px;
+}
+
+#custom-cava {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 18px; /* Slightly larger to show the detail */
+    
+    /* This creates the multi-color look */
+    background: linear-gradient(0deg, #1db954 0%, #1ed760 50%, #a29bfe 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    /* Tighten the space between bars to make them look like one unit */
+    letter-spacing: -2px; 
+    
+    /* Give the whole widget a rounded background "pill" shape */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 0px 15px;
+    margin: 4px 0px;
+}
